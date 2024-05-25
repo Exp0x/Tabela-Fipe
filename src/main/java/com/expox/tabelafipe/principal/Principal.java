@@ -23,7 +23,7 @@ public class Principal {
     public void start() {
 
         // Tipo veiculo
-        System.out.println("Digite o tipo de veiculo: carros/motos/caminhoes \n Ou digite SAIR para fechar o programa");
+        System.out.println("Digite o tipo de veiculo: carros/motos/caminhoes");
         String tipo = scanner.nextLine().toLowerCase();
         endereco = URL_API_FIPE + tipo + "/marcas/";
         json = api.obterDados(endereco);
