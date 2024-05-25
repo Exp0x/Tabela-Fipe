@@ -1,12 +1,10 @@
 package com.expox.tabelafipe.models;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class DadosApiFipe {
+public class Dados {
     @JsonAlias("codigo")
     private String codigo;
     @JsonAlias("nome")
@@ -33,12 +31,4 @@ public class DadosApiFipe {
         return "Codigo: " + codigo + "  Descrição: " + descritor + "\n";
     }
     
-    // Método estático para formatar uma lista de DadosApiFipe
-    public static String formatarLista(List<DadosApiFipe> lista) {
-        StringBuilder sb = new StringBuilder();
-        for (DadosApiFipe dado : lista) {
-            sb.append(dado.toString());
-        }
-        return sb.toString();
-    }
 }
