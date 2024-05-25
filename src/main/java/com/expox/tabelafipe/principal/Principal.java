@@ -62,6 +62,7 @@ public class Principal {
                 .collect(Collectors.toList());
 
         // resultado
+        System.out.println("Todos os veículos filtrados com avaliações por ano: ");
         listaVeiculos.forEach(System.out::println);
     }
 }

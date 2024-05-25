@@ -56,8 +56,8 @@ public class Veiculo {
         }
         @Override
         public String toString() {
-                return "Valor: " + valor + ",Marca: " + marca + ", Ano: " + anoModelo + ", Modelo: "
-                                + modelo + ", Combustivel: " + combustivel + ", CodigoFipe: " + codigoFipe + "\n";
+                return "Valor: " + valor + " Marca: " + marca + " Ano: " + anoModelo + " Modelo: "
+                                + modelo + " Combustivel: " + combustivel + " CodigoFipe: " + codigoFipe;
         }
 
 }
